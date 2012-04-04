@@ -1,0 +1,278 @@
+[root@Fedora12 dev]# v4l-info
+
+### v4l2 device info [/dev/video0] ###
+general info                          
+    VIDIOC_QUERYCAP                   
+        driver                  : "em28xx"
+        card                    : "Terratec Cinergy T XS"
+        bus_info                : "usb-0000:00:12.2-4"   
+        version                 : 0.1.2                  
+        capabilities            : 0x5030041 [VIDEO_CAPTURE,?,TUNER,AUDIO,READWRITE,STREAMING]
+
+standards
+    VIDIOC_ENUMSTD(0)
+        index                   : 0
+        id                      : 0xb000 [NTSC_M,NTSC_M_JP,?]
+        name                    : "NTSC"                     
+        frameperiod.numerator   : 1001                       
+        frameperiod.denominator : 30000                      
+        framelines              : 525                        
+    VIDIOC_ENUMSTD(1)                                        
+        index                   : 1                          
+        id                      : 0x1000 [NTSC_M]            
+        name                    : "NTSC-M"                   
+        frameperiod.numerator   : 1001                       
+        frameperiod.denominator : 30000                      
+        framelines              : 525                        
+    VIDIOC_ENUMSTD(2)                                        
+        index                   : 2                          
+        id                      : 0x2000 [NTSC_M_JP]         
+        name                    : "NTSC-M-JP"                
+        frameperiod.numerator   : 1001                       
+        frameperiod.denominator : 30000                      
+        framelines              : 525                        
+    VIDIOC_ENUMSTD(3)                                        
+        index                   : 3                          
+        id                      : 0x8000 [?]                 
+        name                    : "NTSC-M-KR"                
+        frameperiod.numerator   : 1001                       
+        frameperiod.denominator : 30000                      
+        framelines              : 525                        
+    VIDIOC_ENUMSTD(4)                                        
+        index                   : 4                          
+        id                      : 0x4000 [?]                 
+        name                    : "NTSC-443"                 
+        frameperiod.numerator   : 1001                       
+        frameperiod.denominator : 30000                      
+        framelines              : 525                        
+    VIDIOC_ENUMSTD(5)                                        
+        index                   : 5                          
+        id                      : 0xff [PAL_B,PAL_B1,PAL_G,PAL_H,PAL_I,PAL_D,PAL_D1,PAL_K]
+        name                    : "PAL"                                                   
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(6)                                                                     
+        index                   : 6                                                       
+        id                      : 0x7 [PAL_B,PAL_B1,PAL_G]                                
+        name                    : "PAL-BG"                                                
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(7)                                                                     
+        index                   : 7                                                       
+        id                      : 0x8 [PAL_H]                                             
+        name                    : "PAL-H"                                                 
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(8)                                                                     
+        index                   : 8                                                       
+        id                      : 0x10 [PAL_I]                                            
+        name                    : "PAL-I"                                                 
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(9)                                                                     
+        index                   : 9                                                       
+        id                      : 0xe0 [PAL_D,PAL_D1,PAL_K]                               
+        name                    : "PAL-DK"                                                
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(10)                                                                    
+        index                   : 10                                                      
+        id                      : 0x100 [PAL_M]                                           
+        name                    : "PAL-M"                                                 
+        frameperiod.numerator   : 1001                                                    
+        frameperiod.denominator : 30000                                                   
+        framelines              : 525                                                     
+    VIDIOC_ENUMSTD(11)                                                                    
+        index                   : 11                                                      
+        id                      : 0x200 [PAL_N]                                           
+        name                    : "PAL-N"                                                 
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(12)                                                                    
+        index                   : 12                                                      
+        id                      : 0x400 [PAL_Nc]                                          
+        name                    : "PAL-Nc"                                                
+        frameperiod.numerator   : 1                                                       
+        frameperiod.denominator : 25                                                      
+        framelines              : 625                                                     
+    VIDIOC_ENUMSTD(13)                                                                    
+        index                   : 13                                                      
+        id                      : 0x800 [PAL_60]                                          
+        name                    : "PAL-60"                                                
+        frameperiod.numerator   : 1001                                                    
+        frameperiod.denominator : 30000                                                   
+        framelines              : 525                                                     
+    VIDIOC_ENUMSTD(14)                                                                    
+        index                   : 14                                                      
+        id                      : 0xff0000 [SECAM_B,SECAM_D,SECAM_G,SECAM_H,SECAM_K,SECAM_K1,SECAM_L,?ATSC_8_VSB]
+        name                    : "SECAM"                                                                        
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(15)                                                                                           
+        index                   : 15                                                                             
+        id                      : 0x10000 [SECAM_B]                                                              
+        name                    : "SECAM-B"                                                                      
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(16)                                                                                           
+        index                   : 16                                                                             
+        id                      : 0x40000 [SECAM_G]                                                              
+        name                    : "SECAM-G"                                                                      
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(17)                                                                                           
+        index                   : 17                                                                             
+        id                      : 0x80000 [SECAM_H]                                                              
+        name                    : "SECAM-H"                                                                      
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(18)                                                                                           
+        index                   : 18                                                                             
+        id                      : 0x320000 [SECAM_D,SECAM_K,SECAM_K1]                                            
+        name                    : "SECAM-DK"                                                                     
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(19)                                                                                           
+        index                   : 19                                                                             
+        id                      : 0x400000 [SECAM_L]                                                             
+        name                    : "SECAM-L"                                                                      
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+    VIDIOC_ENUMSTD(20)                                                                                           
+        index                   : 20                                                                             
+        id                      : 0x800000 [?ATSC_8_VSB]                                                         
+        name                    : "SECAM-Lc"                                                                     
+        frameperiod.numerator   : 1                                                                              
+        frameperiod.denominator : 25                                                                             
+        framelines              : 625                                                                            
+
+inputs
+
+tuners
+    VIDIOC_G_TUNER(0)
+        index                   : 0
+        name                    : "Tuner"
+        type                    : unknown
+        capability              : 0x0 [] 
+        rangelow                : 0      
+        rangehigh               : 0      
+        rxsubchans              : 0x0 [] 
+        audmode                 : MONO   
+        signal                  : 100     
+        afc                     : 0      
+
+video capture
+    VIDIOC_ENUM_FMT(0,VIDEO_CAPTURE)
+        index                   : 0 
+        type                    : VIDEO_CAPTURE
+        flags                   : 0            
+        description             : "16 bpp YUY2, 4:2:2, packed"
+        pixelformat             : 0x56595559 [YUYV]           
+    VIDIOC_ENUM_FMT(1,VIDEO_CAPTURE)                          
+        index                   : 1                           
+        type                    : VIDEO_CAPTURE               
+        flags                   : 0                           
+        description             : "16 bpp RGB 565, LE"        
+        pixelformat             : 0x50424752 [RGBP]           
+    VIDIOC_ENUM_FMT(2,VIDEO_CAPTURE)                          
+        index                   : 2                           
+        type                    : VIDEO_CAPTURE               
+        flags                   : 0                           
+        description             : "8 bpp Bayer BGBG..GRGR"    
+        pixelformat             : 0x31384142 [BA81]           
+    VIDIOC_ENUM_FMT(3,VIDEO_CAPTURE)                          
+        index                   : 3                           
+        type                    : VIDEO_CAPTURE               
+        flags                   : 0                           
+        description             : "8 bpp Bayer GRGR..BGBG"    
+        pixelformat             : 0x47425247 [GRBG]           
+    VIDIOC_ENUM_FMT(4,VIDEO_CAPTURE)                          
+        index                   : 4                           
+        type                    : VIDEO_CAPTURE               
+        flags                   : 0                           
+        description             : "8 bpp Bayer GBGB..RGRG"    
+        pixelformat             : 0x47524247 [GBRG]           
+    VIDIOC_ENUM_FMT(5,VIDEO_CAPTURE)                          
+        index                   : 5                           
+        type                    : VIDEO_CAPTURE               
+        flags                   : 0                           
+        description             : "12 bpp YUV411"             
+        pixelformat             : 0x50313134 [411P]           
+    VIDIOC_G_FMT(VIDEO_CAPTURE)                               
+        type                    : VIDEO_CAPTURE               
+        fmt.pix.width           : 720                         
+        fmt.pix.height          : 576                         
+        fmt.pix.pixelformat     : 0x56595559 [YUYV]           
+        fmt.pix.field           : INTERLACED                  
+        fmt.pix.bytesperline    : 1440                        
+        fmt.pix.sizeimage       : 829440                      
+        fmt.pix.colorspace      : SMPTE170M                   
+        fmt.pix.priv            : 0                           
+
+controls
+
+### video4linux device info [/dev/video0] ###
+general info                                 
+    VIDIOCGCAP                               
+        name                    : "Terratec Cinergy T XS"
+        type                    : 0x3 [CAPTURE,TUNER]    
+        channels                : 0                      
+        audios                  : 0                      
+        maxwidth                : 720
+        maxheight               : 576
+        minwidth                : 48
+        minheight               : 32
+
+channels
+
+tuner
+    VIDIOCGTUNER
+        tuner                   : 0
+        name                    : "Tuner"
+        rangelow                : 0
+        rangehigh               : 0
+        flags                   : 0x0 []
+        mode                    : PAL
+        signal                  : 100
+
+audio
+    VIDIOCGAUDIO
+        audio                   : 0
+        volume                  : 65535
+        bass                    : 0
+        treble                  : 0
+
+picture
+    VIDIOCGPICT
+        brightness              : 0
+        hue                     : 0
+        colour                  : 0
+        contrast                : 0
+        whiteness               : 0
+        depth                   : 16
+        palette                 : YUYV
+
+buffer
+ioctl VIDIOCGFBUF: Invalid argument
+
+window
+    VIDIOCGWIN
+        x                       : 0
+        y                       : 0
+        width                   : 720
+        height                  : 576
+        chromakey               : 0
+        flags                   : 0
+
