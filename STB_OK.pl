@@ -3,11 +3,20 @@
 use strict;
 
 use Channel_Change;
+use Getopt::Long;
 
-my $channel	= $ARGV[0];
-my $process	= $ARGV[1];
-
+my $channel;
+my $process = "mythbackend";
 my $logfile = "/var/log/mythtv/channel_change.log";
+ 
+usage() if ( @ARGV < 1 or !GetOptions('c=i' => \$channel, 'p:s' => \$process));
+ 
+sub usage
+{
+  print "Unknown option: @_\n" if ( @_ );
+  print "usage: STB_OK.pl -c <numeric_channel> -p <process_name (default: mythbackend)>\n";
+  exit;
+}
 
 append_to_log("Request received to change channel to $channel", $logfile);
 
@@ -15,7 +24,7 @@ append_to_log("Request received to change channel to $channel", $logfile);
 
 my $output_hash_r = get_process_info($process, $logfile);
 
-append_to_log("Mythbackend process identified (PID: $output_hash_r->{'pid'}, creation time: $output_hash_r->{'crtime'})", $logfile);
+append_to_log("$process process identified (PID: $output_hash_r->{'pid'}, creation time: $output_hash_r->{'crtime'})", $logfile);
 	
 # Check for existence of /tmp/STB_OK file
 
